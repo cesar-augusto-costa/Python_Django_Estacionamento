@@ -2,6 +2,7 @@ from django.db import models
 
 # Create your models here.
 
+
 class Estacionamento(models.Model):
     nomeCliente = models.CharField(max_length=150, null=False, blank=False)
     nomeCarro = models.CharField(max_length=150, null=False, blank=False)
