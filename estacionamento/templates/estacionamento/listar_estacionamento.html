@@ -1,2 +1,8 @@
 <h1>Lista de Entrada e Saída do Estacionamento</h1>
 {{ tarefas }}
+
+<ul>
+  {% for tarefa in tarefas %}
+    <li>ID: {{ tarefa.id }} - Tarefa: {{ tarefa.Tarefa }}</li>
+  {% endfor %}
+</ul>
