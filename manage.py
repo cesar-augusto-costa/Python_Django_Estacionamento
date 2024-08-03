@@ -2,6 +2,15 @@
 """Django's command-line utility for administrative tasks."""
 import os
 import sys
+import shutil
+
+# Código para encontrar o executável do python
+caminho_python = sys.executable
+print(caminho_python)
+
+# Código para encontrar o executável do PIP
+caminho_pip = shutil.which("pip")
+print(caminho_pip)
 
 
 def main():
