@@ -17,9 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from estacionamento.views import home
+from estacionamento.views import home, listarEstacionamento
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", home),
+    # path("", home),
+    path("", listarEstacionamento),
 ]
