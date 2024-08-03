@@ -1,8 +1,7 @@
 <h1>Lista de Entrada e Saída do Estacionamento</h1>
-{{ tarefas }}
 
 <ul>
-  {% for tarefa in tarefas %}
-    <li>ID: {{ tarefa.id }} - Tarefa: {{ tarefa.Tarefa }}</li>
+  {% for estacionamento in estacionamentos %}
+    <li>ID: {{ estacionamento.id }} - Cliente: {{ estacionamento.nomeCliente }} - Carro: {{ estacionamento.nomeCarro }} - Placa: {{ estacionamento.placa }} - Entrada: {{ estacionamento.dataEntrada }} - Saída: {{ estacionamento.dataSaida }} - Valor: {{ estacionamento.valor }}</li>
   {% endfor %}
 </ul>
